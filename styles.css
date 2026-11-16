@@ -24,5 +24,7 @@
 .hero-photo-frame{position:relative;aspect-ratio:7 / 5;overflow:hidden;border-radius:6px;box-shadow:var(--shadow)}
 .hero-photo-frame .hero-photo{position:absolute;inset:0;width:100%;max-width:none;height:100%;aspect-ratio:auto;object-fit:cover;object-position:38% center;border-radius:0;box-shadow:none}
 .hero-photo-wrap .photo-note{left:16px;bottom:-24px;padding:12px 16px}
-@media(min-width:901px){.hero{padding:64px 0 90px}.hero-grid{gap:48px}.hero h1{font-size:clamp(56px,5.3vw,76px)}}
+@media(min-width:901px){.hero{padding:64px 0 90px}.hero-grid{gap:48px}.hero h1{font-size:clamp(56px,5.3vw,76px)}.hero-photo-wrap{max-width:520px}}
 @media(max-width:600px){.hero{padding-top:32px;padding-bottom:80px}.hero h1{font-size:clamp(44px,11.5vw,66px)}.hero-photo-wrap{max-width:380px}.hero-photo-wrap .photo-note{left:12px;bottom:-20px;padding:10px 14px}}
+/* Let the tire photos scale proportionally instead of retaining their HTML height. */
+.tire-card img{height:auto;object-fit:contain}
